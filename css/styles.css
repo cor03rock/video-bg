@@ -77,17 +77,38 @@ li:before {
   content     : "\f08a";
   margin-left : -36px;
 }
+li:last-child {
+	color: plum;
+}
 button {
   font-family: 'Poiret One', cursive;
 }
 blockquote {
   font-family : 'Cedarville Cursive', cursive;
 }
-@media screen and (max-width: 500px) {
-  div{width:70%;}
-  #polina {
-    background-color: red;
-  }
+@media screen and (max-width: 680px) {
+  	#polina {
+		width : 45%;
+		float: left;
+ 	}
+ 	h1 {
+		font-size: 15px;
+ 	}
+ 	blockquote {
+		font-size: 12px;
+ 	}
+ 	blockquote i:before {
+  		font-size   : 8px;
+ 	}
+ 	blockquote i:after {
+  		font-size   : 8px;
+ 	}
+  	li:before {
+		font        : normal normal normal 14px/1 FontAwesome;
+  		content     : "\f004";
+  		}
+ 	}
+
 }
 
 @media screen and (max-device-width: 800px) {
